@@ -13,9 +13,8 @@ const getAdvice = async () => {
   para.innerHTML = advice;
 };
 
-setInterval(getAdvice, 10000);
+getAdvice();
 
 btn.addEventListener("click", function (e) {
-  e.preventDefault();
-  getAdvice;
+  getAdvice();
 });
